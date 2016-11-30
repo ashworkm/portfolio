@@ -45,6 +45,8 @@ function operation () {
 
 }
 
+// need to allow for user input using number keys.
+
 // call functions
 
 appendEntry();
