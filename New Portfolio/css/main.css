@@ -5,6 +5,8 @@
    ========================================================================== */
 body {
 	background-color: #F4DECB!important;
+	font-family: 'Cormorant Garamond', serif;
+	color: #fff;
 }
 
 nav.navbar.navbar-fixed-top {
@@ -31,9 +33,9 @@ nav li {
 }
 
 li a {
-	color: white !important;
+	color: #fff !important;
 	text-decoration: none;
-c	font-size: large;
+	font-size: large;
 }
 
 
@@ -55,6 +57,28 @@ li a:hover  {
 	height: 700px;
 	display: block;
 	margin-top: -50px !important; 
+}
+
+.navbar.navbar-fixed-top .container {
+	margin-right: 0;
+}
+
+#navbar {
+	float: right;
+}
+
+h1 {
+	margin: 0 auto;
+	width: 400px;
+    font-weight: 100;
+    font-size: 40px !important;
+    margin-top: 200px;
+}
+
+div#intro.jumbotron p {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 700px;
 }
 
 @media {
