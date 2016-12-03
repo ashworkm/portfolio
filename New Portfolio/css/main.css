@@ -1,0 +1,144 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+	background-color: #98878F !important;
+	font-family: 'Cormorant Garamond', serif;
+	color: #fff;
+}
+
+nav.navbar.navbar-fixed-top {
+	background-color: transparent; 
+	width: 100% !important;
+	height: 60px;
+	opacity: 0.7;
+    z-index: 13;
+    border: none;
+}
+
+nav.navbar.navbar-fixed-top.change-color {
+	background-color: #49274A !important;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border: none !important;
+}
+
+nav li {
+	float: left;
+	list-style-type: none;
+	padding: 10px 15px;
+}
+
+li a {
+	color: #fff !important;
+	text-decoration: none;
+	font-size: large;
+}
+
+
+/*Hover state for top level links*/
+li a:hover  {
+	color: #65909A !important;
+}
+
+
+
+
+.jumbotron {
+	background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url("../img/code_coffee.jpg");
+    background-size: cover;
+    filter: grayscale(100%);
+	max-width: 100% !important;
+	height: 700px;
+	display: block;
+	margin-top: -50px !important; 
+}
+
+.navbar.navbar-fixed-top .container {
+	margin-right: 0;
+}
+
+#navbar {
+	float: right;
+}
+
+h1 {
+	margin: 0 auto;
+	width: 400px;
+    font-weight: 100;
+    font-size: 40px !important;
+    margin-top: 150px;
+}
+
+/* .hello.container img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 140px;
+	border-radius: 50%;
+}
+*/
+div#intro.jumbotron p {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 700px;
+}
+
+.skills {
+	margin: 0 auto;
+	width: 1000px; 
+}
+
+.indSkill {
+	background-color: transparent;
+	display: inline-block;
+	height: 180px;
+	width: 180px;
+	margin: 30px;
+	border: 1px solid black;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 180px;  
+}
+
+.projects {
+	margin-top: 0; 
+/*	background-color: #7ea1a5; */
+	opacity: 0.5;
+	height: 1036px;
+	width: 100%;
+}
+
+.contact {
+	background: url("../img/coffe2.jpg");
+	background-size: cover;
+	opacity: 0.5;
+	height: 1036px;
+	width: 100%;
+}
+
+
+@media {
+	(min-width: 800px)
+	.jumboton {
+		height: 300px !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
