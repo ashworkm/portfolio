@@ -3,8 +3,10 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
 body {
-	background-color: #F4DECB!important;
+	background-color: #98878F !important;
 	font-family: 'Cormorant Garamond', serif;
 	color: #fff;
 }
@@ -53,6 +55,7 @@ li a:hover  {
                      rgba(20,20,20, .5)),
                      url("../img/code_coffee.jpg");
     background-size: cover;
+    filter: grayscale(100%);
 	max-width: 100% !important;
 	height: 700px;
 	display: block;
@@ -72,14 +75,89 @@ h1 {
 	width: 400px;
     font-weight: 100;
     font-size: 40px !important;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
+/* .hello.container img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 140px;
+	border-radius: 50%;
+}
+*/
 div#intro.jumbotron p {
 	margin: 0 auto;
 	margin-top: 20px;
 	width: 700px;
 }
+
+.skills {
+	margin: 0 auto;
+	width: 1000px; 
+}
+
+.indSkill {
+	background-color: transparent;
+	display: inline-block;
+	height: 180px;
+	width: 180px;
+	margin: 30px;
+	border: 1px solid black;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 180px;  
+}
+
+.projects {
+	margin-top: 0; 
+/*	background-color: #7ea1a5; */
+	opacity: 0.5;
+	height: 1036px;
+	width: 100%;
+}
+
+.contact {
+	background: url("../img/coffe2.jpg");
+	background-size: cover;
+	opacity: 0.5;
+	height: 1036px;
+	width: 100%;
+}
+
+.resumeHeading {
+	text-align: center;
+}
+
+.resumeHeading h1 {
+	margin-top: 0 !important;
+}
+
+#resumeHeader {
+	height: 450px;
+	background: url("../img/code_coffee2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0 !important;
+}
+
+#myResume {
+	background: url("../img/resumeBackground.jpg");
+    /* color: black; */
+    width: 60%;
+    margin: 0 auto;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.resumeContent {
+    width: 80%;
+    margin: 0 auto;
+
+.dates {
+	float: right !important;
+}
+
 
 @media {
 	(min-width: 800px)
@@ -87,7 +165,6 @@ div#intro.jumbotron p {
 		height: 300px !important;
 	}
 }
-
 
 
 
