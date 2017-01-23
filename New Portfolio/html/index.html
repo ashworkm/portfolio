@@ -27,89 +27,136 @@
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+      <a id="home"></a>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-    <!--      <a class="navbar-brand" href="#">Project name</a> -->
+      <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <li class="icon">
+                  <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> 
+                </li>
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+      <!--      <a class="navbar-brand" href="#">Project name</a> -->
+          </div>
+          <ul class="topnav" id="myTopnav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="resume.html" target="_blank">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+             </ul>
+           <!-- <form class="navbar-form navbar-right" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="Email" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-success">Sign in</button>
+            </form> -->
+          </div><!--/.navbar-collapse -->
+
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="resume.html" target="_blank">Resume</a></li>
-              <li><a href="#contact">Contact Me</a></li>
-              <li class="icon">
-                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> 
-              </li>
-           </ul>
-         <!-- <form class="navbar-form navbar-right" role="form">
+      </nav>
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div id="intro" class="jumbotron">
+        <div class="hello">
+        <img src="../img/ash3.jpg" id="ash_pic">
+       <!--   <img src="img/ash.jpg"> -->
+          <h1>Front-end Developer</h1>
+          <p>Hello World! I'm Ashlee, and I'm a front-end developer in the Indianapolis area.</p>
+      </div>
+      </div>
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="skills">
+          <a id="skills"></a>
+          <h3 id="skills">Skills</h3>
+          <div class="indSkill"><span>HTML</span></div>
+          <div class="indSkill"><span>CSS</span></div>
+          <div class="indSkill"><span>JavaScript</span></div>
+          <div class="indSkill"><span>jQuery</span></div>
+          <div class="indSkill"><span>Bootstrap</span></div>
+          <div class="indSkill"><span>Python</span></div>
+          <div class="indSkill"><span>Ruby</span></div>
+          <div class="indSkill"><span>Responsive Design</span></div>
+          <div class="indSkill"><span>SEO</span></div>
+          <div class="indSkill"><span>CMS</span></div>
+        </div>
+        <div class="projects">
+          <a id="projects"></a>
+          <h3>Projects</h3>
+          <p><h2>Developer hard at work. New content coming soon!</h2></p>
+          <img src="../img/under_construction.jpg" id="construction">
+        </div>
+        <div class="contact">
+          <a id="contact"></a>
+    <!--      <p><h3>Contact Me</h3></p> -->
+          <form>
+            <br>
+            <p><h2 class="formHeading">Contact Me</h2></p>
             <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+              <br>
+              <label for="ContactName">Name</label>
+              <input type="text" class="form-control" id="contactName"placeholder="Enter Name">
+            </div>
+              <div class="form-group">
+              <label for="emailAddress">Email address</label>
+              <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">No worries, I'll never share your email with anyone else.</small>
+            </div>
+             <div class="form-group">
+              <label for="reasonSelect">Reason For Contact</label>
+              <select class="form-control" id="reasonSelect">
+                <option>I would like you to work on a project.</option>
+                <option>Just saying hi!</option>
+              </select>
             </div>
             <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+              <label for="budgetSelect">Budget</label>
+              <select class="form-control" id="budgetSelect">
+                <option>$5-10k</option>
+                <option>$10-20k</option>
+                <option>$20k+</option>
+              </select>
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form> -->
-        </div><!--/.navbar-collapse -->
-
+             <div class="form-group">
+              <label for="projectType">Type of Project</label>
+              <input type="text" class="form-control" id="projectType"placeholder="Enter project type">
+            </div>
+            <div class="form-group">
+              <label for="projectComments">Comments</label>
+              <textarea class="form-control" id="projectComments" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br><br><br><br>
+          </form>
+        </div>
       </div>
-    </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div id="intro" class="jumbotron">
-      <div class="hello container">
-     <!--   <img src="img/ash.jpg"> -->
-        <h1>Front-end Developer</h1>
-      </div>
-      <p>Hello World! I'm Ashlee, and I'm a front-end developer in the Indianapolis area.</p>
-    </div>
-    <div class="container">
-      <!-- Example row of columns -->
-    <div class="skills">
-      <a id="skills"></a>
-      <p><h3 id="skills">Skills</h3></p>
-      <div class="indSkill"><span>HTML</span></div>
-      <div class="indSkill"><span>CSS</span></div>
-      <div class="indSkill"><span>JavaScript</span></div>
-      <div class="indSkill"><span>jQuery</span></div>
-      <div class="indSkill"><span>Python</span></div>
-      <div class="indSkill"><span>Ruby</span></div>
-      <div class="indSkill"><span>Content Management Systems</span></div>
-      <div class="indSkill"><span>Search Engine Optimization</span></div>
-    </div>
-    <div class="projects"></div>
-    <a id="projects"></a>
-    <p><h3>Projects</h3></p>
-    </div>
-    <div class="contact">
-      <a id="contact"></a>
-      <p><h3>Contact Me</h3></p>
-    </div>
+  <!--    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div> 
 
-<!--    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-    </div> 
+        <hr> -->
 
-      <hr> -->
-
-      <footer>
-      </footer>
-    </div> <!-- /container -->        
+        <footer>
+        </footer>
+      </div> <!-- /container -->        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="../js/main.js"></script>
 
         <script src="../js/vendor/bootstrap.min.js"></script>
 
@@ -121,13 +168,22 @@
               var scrollPos = $(window).scrollTop(),
                   navbar = $('nav.navbar.navbar-fixed-top');
            
-              if (scrollPos > 20) {
+              if (scrollPos > 120) {
                 navbar.addClass('change-color');
               } else {
                 navbar.removeClass('change-color');
               }
             });
           });
+
+// animated scroll for anchor links
+    $(document).on('click', 'a', function(event){
+      event.preventDefault();
+
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+});
 
         </script>
 
